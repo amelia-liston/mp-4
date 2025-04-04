@@ -1,17 +1,11 @@
 "use client";
 
-// import TextField from '@mui/material/TextField';
-// import Autocomplete from '@mui/material/Autocomplete';
 // import {useState, useEffect} from 'react';
-// import InputLabel from '@mui/material/InputLabel';
-// import MenuItem from '@mui/material/MenuItem';
-// import FormControl from '@mui/material/FormControl';
-// import Select, { SelectChangeEvent } from '@mui/material/Select';
-import {getCatData} from "@/app/actions";
+import {getCatData} from "@/app/lib/route";
+import Cats from "@/app/components/cat-image";
 
 
 export default function Home() {
-    const {data} =
     //const [type, setType] = useState('');
     // const handleChange = async (event: SelectChangeEvent) => {
     //     setType(event.target.value as string);
@@ -23,7 +17,7 @@ export default function Home() {
   return (
     <>
         <div>
-            <h1>Cat Imagesr</h1>
+            <h1>Cat Images</h1>
 
         </div>
     </>
