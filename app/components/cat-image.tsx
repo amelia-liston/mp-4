@@ -6,7 +6,7 @@ const AllCatsDiv=styled.div`
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
-    background-color: lightblue;
+    background-color: lavender;
 `;
 
 const OneCatDiv=styled.div`
@@ -16,7 +16,6 @@ const OneCatDiv=styled.div`
     max-width: 30%;
     padding: 2%;
     margin: 1%;
-    border: 3px solid lightblue;
     font: small-caps calc(2px + 1vw) "SF Pro Rounded";
     text-align: center;
     border-radius: 15px;

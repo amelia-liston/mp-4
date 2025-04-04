@@ -7,10 +7,10 @@ export default function Home() {
 
   return (
     <>
-        <div>
-            <h1>Select below to see a random cat :)</h1>
-            <form action={"/cat"} method="POST">
-                <Button type="submit" color="primary">
+        <div className="flex-col">
+            <h1 className="mb-5 mt-5 flex justify-center text-2xl">Select below to see a random cat :)</h1>
+            <form className="flex justify-center" action={"/cat"} method="POST">
+                <Button variant="outlined" size="large" type="submit" color="primary">
                     See Cat
                 </Button>
             </form>

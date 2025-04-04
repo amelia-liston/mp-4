@@ -6,8 +6,12 @@ export default async function CatsPage(){
 
     return(
         <>
-            <h1>Cat Images</h1>
-            {data != null? <Cats data={data}/>: null}
+            <div className="flex-col">
+                <div className="flex justify-center">
+                    <h1 className="text-2xl">Cat!</h1>
+                </div>
+                {data != null? <Cats data={data}/>: null}
+            </div>
         </>
     )
 }
