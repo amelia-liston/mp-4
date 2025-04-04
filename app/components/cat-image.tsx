@@ -6,7 +6,7 @@ const AllCatsDiv=styled.div`
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
-    background-color: #D1F6FF;
+    background-color: lightblue;
 `;
 
 const OneCatDiv=styled.div`
@@ -20,6 +20,7 @@ const OneCatDiv=styled.div`
     font: small-caps calc(2px + 1vw) "SF Pro Rounded";
     text-align: center;
     border-radius: 15px;
+    background-color: pink;
 `;
 
 const StyledImage=styled.img`
@@ -34,7 +35,6 @@ export default function Cats(props: {data:CatData[]}){
                 {
                     props.data.map((cat: CatData) =>
                         <OneCatDiv key={cat.id} >
-                            <h1>{cat.id}</h1>
                             <StyledImage src={cat.url} alt={`image of a cat`}/>
                         </OneCatDiv>
                     )
