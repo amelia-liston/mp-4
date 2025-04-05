@@ -9,7 +9,7 @@ export default function Home() {
     <>
         <div className="flex-col">
             <h1 className="mb-5 mt-5 flex justify-center text-2xl">Select below to see a random cat :)</h1>
-            <form className="flex justify-center" action={"/cat"} method="POST">
+            <form className="flex justify-center" action={"/cat"} method="GET">
                 <Button variant="outlined" size="large" type="submit" color="primary">
                     See Cat
                 </Button>
