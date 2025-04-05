@@ -32,10 +32,14 @@ export default function Cats(props: {data:CatTypes[]}){
         <>
             <AllCatsDiv>
                 {
+                    props.data.length === 0 ? (
+                        <p>No cat data was fetched</p>
+                        ) : (
                     props.data.map((cat: CatTypes) =>
                         <OneCatDiv key={cat.id} >
                             <StyledImage src={cat.url} alt={`image of a cat`}/>
                         </OneCatDiv>
+                    )
                     )
                 }
             </AllCatsDiv>
