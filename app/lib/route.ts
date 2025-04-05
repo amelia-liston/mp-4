@@ -10,10 +10,12 @@ export async function getCatData(): Promise<CatType | null> {
     //     console.error(error);
     //     return null;
     // }
-    const res = await fetch(`https://api.thecatapi.com/v1/images/search?limit=10?api_key=${process.env.CAT_API_KEY}`);
+    //https://api.thecatapi.com/v1/images/search?limit=10&breed_ids=beng&api_key=${process.env.CAT_API_KEY}
+    //const res = await fetch(`https://api.thecatapi.com/v1/images/search?limit=10?api_key=${process.env.CAT_API_KEY}`);
+    const res = await fetch(`https://api.thecatapi.com/v1/images/search?limit=10&breed_ids=beng&api_key=${process.env.CAT_API_KEY}`);
     if(res.status !== 200){
         return [];
-    }else{
+    } else {
         const data = await res.json();
         console.log(data);
         return data;
