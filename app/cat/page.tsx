@@ -8,7 +8,7 @@ export default async function CatsPage(){
         <>
             <div className="flex-col">
                 <div className="flex justify-center">
-                    <h1 className="text-2xl">Cat!</h1>
+                    <h1 className="text-2xl mb-5 font-bold">Cats :)</h1>
                 </div>
                 {data != null? <Cats data={data}/>: null}
             </div>

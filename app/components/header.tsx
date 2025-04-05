@@ -5,7 +5,7 @@ export default function Header() {
     return(
         <>
             <header className="flex justify-between items-center h-20">
-                <h2 className="text-4xl font-semibold p-4">Random Cat Images!</h2>
+                <h2 className="text-4xl font-semibold p-4">Random Cats!</h2>
                 <nav className="p-2 m-4">
                     <Link href="/" className={linkStyling}>
                         Home
