@@ -1,6 +1,6 @@
 "use client";
 import styled from "styled-components";
-import {CatData} from "../types/cat";
+import {CatTypes} from "../types/cat";
 
 const AllCatsDiv=styled.div`
     display: flex;
@@ -27,12 +27,12 @@ const StyledImage=styled.img`
     max-width: 100%;
 `;
 
-export default function Cats(props: {data:CatData[]}){
+export default function Cats(props: {data:CatTypes[]}){
     return (
         <>
             <AllCatsDiv>
                 {
-                    props.data.map((cat: CatData) =>
+                    props.data.map((cat: CatTypes) =>
                         <OneCatDiv key={cat.id} >
                             <StyledImage src={cat.url} alt={`image of a cat`}/>
                         </OneCatDiv>

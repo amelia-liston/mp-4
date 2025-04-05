@@ -1,7 +1,7 @@
 "use server";
-import {CatType} from "@/app/types/cat";
+import {CatTypes} from "@/app/types/cat";
 
-export async function getCatData(): Promise<CatType | null> {
+export async function getCatData(): Promise<CatTypes[]> {
     // try{
     //     const res = await fetch(`https://api.thecatapi.com/v1/images/search?limit=10?api_key=${process.env.CAT_API_KEY}`);
     //     const data = await res.json();
